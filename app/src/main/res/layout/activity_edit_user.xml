@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/ic_bgsvg_user"
+    tools:context=".Edit_user">
+
+
+    <RelativeLayout
+        android:id="@+id/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <ImageView
+                        android:id="@+id/ic_back_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ic_white_back" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginBottom="5dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/user_dp"
+                            app:civ_border_color="@color/imageBorderColor"
+                            app:civ_border_width="2dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:ignore="MissingConstraints" />
+
+                        <ImageView
+                            android:id="@+id/fab"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginEnd="148dp"
+                            android:src="@drawable/camera"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            tools:ignore="MissingConstraints"></ImageView>
+
+
+                        <!--                                <ImageView-->
+                        <!--                                    style="@style/viewParent"-->
+                        <!--                                    android:layout_alignParentRight="true"-->
+                        <!--                                    android:layout_centerVertical="true"-->
+                        <!--                                    android:src="@drawable/ic_more"-->
+                        <!--                                    tools:ignore="MissingConstraints" />-->
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                </RelativeLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/ten"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="7dp"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="-4dp"
+                    tools:layout_editor_absoluteY="75dp">
+
+                    <TextView
+                        android:id="@+id/edtEmail"
+                        style="@style/viewParent.headerText"
+                        android:layout_below="@id/edtUsername"
+                        android:text="Edit personal details"
+                        android:textColor="#5D5C5C"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.497"
+                        app:layout_constraintStart_toStartOf="parent"
+                       />
+
+                    <TextView
+                        android:id="@+id/edtUsername"
+                        style="@style/viewParent.headerText"
+                        android:layout_marginBottom="36dp"
+                        android:text="Kapil Mohan"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.2" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="454dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+
+                    android:paddingRight="30dp">
+
+                    <TextView
+                        style="@style/viewParent.headerText.settingsMiniTitle"
+                        android:text="Cập nhật thông tin"
+                        android:textColor="#000"
+                        android:textSize="23dp"
+                        />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TÊN TÀI KHOẢN"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="#000"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginTop="5dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="User name..." />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="EMAIL"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="#000"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginTop="5dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email..." />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GIỚI TÍNH"
+                        android:textStyle="bold"
+                        android:textSize="14dp"
+                        android:textColor="#000"/>
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton android:id="@+id/radio_pirates"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nam"
+                           />
+                        <RadioButton android:id="@+id/radio_ninjas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="Nữ"
+                            />
+                    </RadioGroup>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="NGÀY SINH"
+                        android:textSize="14dp"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"
+                         />
+                    <LinearLayout
+                        android:id="@+id/select_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:id="@+id/DD"
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:paddingTop="10dp"
+                            android:hint="DD"
+                            android:background="@drawable/tv_date"
+                            android:textSize="18dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="/"
+                            android:textSize="18dp"/>
+                        <TextView
+                            android:id="@+id/MM"
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:paddingTop="10dp"
+                            android:hint="MM"
+                            android:background="@drawable/tv_date"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="18dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="/"
+                            android:textSize="18dp"/>
+                        <TextView
+                            android:id="@+id/YYYY"
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:paddingTop="10dp"
+                            android:hint="YYYY"
+                            android:background="@drawable/tv_date"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="18dp"/>
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fab"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom|end"-->
+<!--        android:layout_margin="16dp"-->
+<!--        app:srcCompat="@android:drawable/ic_menu_camera" />-->
+
+    <Button
+        android:id="@+id/fabUpload"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEdit"
+        android:background="@drawable/btn_custom"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp"
+        android:text="CẬP NHẬT THÔNG TIN"
+        android:layout_gravity="bottom|center_horizontal"/>
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fabUpload"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom|center_horizontal"-->
+<!--        android:layout_margin="16dp"-->
+<!--        app:srcCompat="@android:drawable/ic_menu_upload" />-->
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

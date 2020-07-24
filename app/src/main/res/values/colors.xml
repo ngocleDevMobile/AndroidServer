@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00796b</color>
+    <color name="colorPrimaryDark">#0000695C</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="contentBodyColor">#00FCFCFC</color>
+    <color name="contentTextColor">#020000</color>
+    <color name="imageBorderColor">#13D3B4</color>
+    <color name="designMainColor">#13D3B4</color>
+    <color name="whiteBodyColor">#00FCFCFC</color>
+    <color name="primaryTextColor">#13D3B4</color>
+    <color name="miniTitle">#0F0101</color>
+    <color name="my_statusbar_color">#FCFCFC</color>
+    <color name="bg_color">#243c5d</color>
+
+    <color name="frutorial_title">#4c4c4c</color>
+</resources>
